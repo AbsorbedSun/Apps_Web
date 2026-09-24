@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Registro</title>
+    <meta name="author" content="Aldo Garcia Ambrosio Aldo" />
+    <meta name="author" content="Ramos Garcia Rafael" />
+    <meta name="author" content="Rivera Morales Jesus" />
+    <meta name="author" content="Rodriguez Marcial Marifer" />
+  </head>
+  <body>
+    <h2 style="text-align: center">REGISTRO DE DATOS GENERALES</h2>
+    <h3 style="text-align: center">Alumnos de Nuevo Ingreso</h3>
+    <h4 style="text-align: center">(Enero 2027)</h4>
+    <div>
+      <form action="mensaje.html" method="get">
+        <fieldset>
+          <legend>Datos personales</legend>
+
+          <label for="boleta">No. de boleta: </label>
+          <input
+            type="number"
+            id="boleta"
+            name="boleta"
+            min="10"
+            max="10"
+            required
+          /><br /><br />
+
+          <label for="nombre">Nombre: </label>
+          <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+          <label for="ap_pat">Apellido Paterno: </label>
+          <input type="text" id="ap_pat" name="ap_pat" required /><br /><br />
+
+          <label for="ap_mat">Apellido Materno: </label>
+          <input type="text" id="ap_mat" name="ap_mat" required /><br /><br />
+
+          <label for="fecha_nac">Fecha de nacimiento: </label>
+          <input
+            type="date"
+            id="fecha_nac"
+            name="fecha_nac"
+            required
+          /><br /><br />
+
+          <label>Género: </label><br />
+          <input
+            type="radio"
+            name="genero"
+            value="femenino"
+            id="femenino"
+            required
+          />
+          <label for="femenino">Femenino</label>
+
+          <input
+            type="radio"
+            name="genero"
+            value="masculino"
+            id="masculino"
+            required
+          />
+          <label for="masculino">Masculino</label>
+
+          <input type="radio" name="genero" value="otro" id="otro" required />
+          <label for="otro">Otro</label><br /><br />
+        </fieldset>
+        <fieldset>
+          <legend>Contacto</legend>
+          <label for="nombre">Calle y número: </label>
+          <input
+            type="text"
+            id="calle"
+            name="calle"
+            required
+            placeholder="Lago mask 205"
+            autofocus
+          /><br /><br />
+
+          <label for="Colonia">Colonia: </label>
+          <input
+            type="text"
+            id="Colonia"
+            name="Colonia"
+            placeholder="Anáhuac"
+            required
+          /><br /><br />
+
+          <label for="alcaldia"> Alcaldías</label>
+          <select name="alcaldia" id="alcaldia" required>
+            <option value="">Selecciona una alcaldía</option>
+            <option value="alvaro">Álvaro Obregón</option>
+            <option value="Azcapotzalco">Azcapotzalco</option>
+            <option value="Benito">Benito Juárez</option>
+            <option value="Coyoacan">Coyoacán</option>
+            <option value="Cuajimalpa">Cuajimalpa de Morelos</option>
+            <option value="Cuauhtemoc">Cuauhtémoc</option>
+            <option value="Gustavo">Gustavo A. Madero</option>
+            <option value="Iztacalco">Iztacalco</option>
+            <option value="Iztapalapa">Iztapalapa</option>
+            <option value="Magdalena">La Magdalena Contreras</option>
+            <option value="Miguel_Hidalgo">Miguel Hidalgo</option>
+            <option value="Milpa">Milpa Alta</option>
+            <option value="Tlahuac">Tláhuac</option>
+            <option value="Tlalpan">Tlalpan</option>
+            <option value="Venustiano">Venustiano Carranza</option>
+            <option value="Xochimilco">Xochimilco</option>
+          </select>
+          <br /><br />
+
+          <label for="cp">Código Postal: </label>
+          <input
+            type="number"
+            id="cp"
+            name="cp"
+            pattern="[0-9]{5}"
+            placeholder="11320"
+            min="5"
+            max="5"
+            autofocus
+            required
+          /><br /><br />
+
+          <label for="cp">Teléfono o celular: </label>
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            pattern="[0-9]{10}"
+            placeholder="294100878"
+            min="10"
+            autofocus
+            required
+          /><br /><br />
+
+          <label for="correo">Correo electrónico: </label>
+          <input
+            type="email"
+            id="correo"
+            name="correo"
+            placeholder="marifer@gmail.com"
+            required
+          /><br /><br />
+        </fieldset>
+        <fieldset>
+          <legend>Procedencia</legend>
+
+          <label>Escuela de Procedencia: </label>
+          <select id="escuela" name="nescuela" required>
+            <option value="-1" selected="">
+              Selecciona tu Escela de Procedencia
+            </option>
+            <option value="1">CECyT No. 1 Gonzalo Vázquez Vela</option>
+            <option value="10">CECyT No. 10 Carlos Vallejo Márquez</option>
+            <option value="11">CECyT No. 11 Wilfrido Massieu</option>
+            <option value="12">CECyT No. 12 José María Morelos</option>
+            <option value="13">CECyT No. 13 Ricardo Flores Magón</option>
+            <option value="14">CECyT No. 14 Luis Enrique Erro</option>
+            <option value="15">CECyT No. 15 Diódoro Antúnez Echegaray</option>
+            <option value="16">CECyT No. 16 Hidalgo</option>
+            <option value="17">CECyT No. 17 León, Guanajuato</option>
+            <option value="18">CECyT No. 18 Zacatecas</option>
+            <option value="20">CECyT No. 19 Leona Vicario</option>
+            <option value="2">CECyT No. 2 Miguel Bernard</option>
+            <option value="21">CECyT No. 20 Natalia Serdán Alatriste</option>
+            <option value="3">CECyT No. 3 Estanislao Ramírez Ruiz</option>
+            <option value="4">CECyT No. 4 Lázaro Cárdenas</option>
+            <option value="5">CECyT No. 5 Benito Juárez</option>
+            <option value="6">CECyT No. 6 Miguel Othón de Mendizábal</option>
+            <option value="7">CECyT No. 7 Cuauhtémoc</option>
+            <option value="8">CECyT No. 8 Narciso Bassols</option>
+            <option value="9">CECyT No. 9 Juan de Dios Bátiz</option>
+            <option value="19">CET 1 Walter Cross Buchanan</option>
+            <option value="20">Otra escuela de procedencia</option>
+          </select>
+
+          <label>Escuela: </label>
+          <input
+            type="text"
+            id="otraE"
+            name="otraE"
+            placeholder="Ingresa el nombre de tu institucion de procedencia"
+          /><br /><br />
+
+          <label for="carrera">Carrera: </label>
+          <select id="carrera" name="carrera" required>
+            <option value="-1" selected>Selecciona tu carrera</option>
+            <!-- Ciencias Físico Matemáticas -->
+            <option value="aeronautica">Técnico en Aeronáutica</option>
+            <option value="automatizacion">
+              Técnico en Automatización y Control Eléctrico Industrial
+            </option>
+            <option value="computacion">Técnico en Computación</option>
+            <option value="construccion">Técnico en Construcción</option>
+            <option value="diagnostico">
+              Técnico en Diagnóstico y Mejoramiento Ambiental
+            </option>
+            <option value="dibujo">
+              Técnico en Dibujo Asistido por Computadora
+            </option>
+            <option value="diseno">Técnico en Diseño Gráfico Digital</option>
+            <option value="energia">Técnico en Energía Sustentable</option>
+            <option value="instalaciones">
+              Técnico en Instalaciones y Mantenimiento Eléctrico
+            </option>
+            <option value="mantenimiento">
+              Técnico en Mantenimiento Industrial
+            </option>
+            <option value="manufactura">
+              Técnico en Manufactura Asistida por Computadora
+            </option>
+            <option value="maquinas">
+              Técnico en Máquinas con Sistemas Automatizados
+            </option>
+            <option value="mecatronica">Técnico en Mecatrónica</option>
+            <option value="metalurgia">Técnico en Metalurgia</option>
+            <option value="metrologia">
+              Técnico en Metrología y Control de Calidad
+            </option>
+            <option value="plasticos">Técnico en Plásticos</option>
+            <option value="procesos">Técnico en Procesos Industriales</option>
+            <option value="programacion">Técnico en Programación</option>
+            <option value="redes">Técnico en Redes de Cómputo</option>
+            <option value="automotrices">
+              Técnico en Sistemas Automotrices
+            </option>
+            <option value="constructivos">
+              Técnico en Sistemas Constructivos Asistidos por Computadora
+            </option>
+            <option value="control">
+              Técnico en Sistemas de Control Eléctrico
+            </option>
+            <option value="digitales">Técnico en Sistemas Digitales</option>
+            <option value="mecanicos">
+              Técnico en Sistemas Mecánicos Industriales
+            </option>
+            <option value="soldadura">Técnico en Soldadura Industrial</option>
+            <option value="telecomunicaciones">
+              Técnico en Telecomunicaciones
+            </option>
+
+            <!-- Ciencias Médico-Biológicas -->
+            <option value="alimentos">Técnico en Alimentos</option>
+            <option value="ecologia">Técnico en Ecología</option>
+            <option value="enfermeria">Técnico en Enfermería</option>
+            <option value="laboratoristaclinico">
+              Técnico en Laboratorista Clínico
+            </option>
+            <option value="laboratoristaquimico">
+              Técnico en Laboratorista Químico
+            </option>
+            <option value="sustentabilidad">Técnico en Sustentabilidad</option>
+
+            <!-- Ciencias Sociales y Administrativas -->
+            <option value="administracion">Técnico en Administración</option>
+            <option value="turisticas">
+              Técnico en Administración de Empresas Turísticas
+            </option>
+            <option value="comercio">Técnico en Comercio Internacional</option>
+            <option value="contaduria">Técnico en Contaduría</option>
+            <option value="gastronomia">Técnico en Gastronomía</option>
+            <option value="ciberseguridad">
+              Técnico en Gestión de la Ciberseguridad
+            </option>
+            <option value="informatica">Técnico en Informática</option>
+            <option value="mercadotecnia">Técnico en Mercadotecnia</option>
+            <option value="mercadotecniadigital">
+              Técnico en Mercadotecnia Digital
+            </option>
+          </select>
+
+          <label>Promedio: </label>
+          <input
+            type="number"
+            id="prom"
+            name="prom"
+            required
+            min="6"
+            max="10"
+            step="0.01"
+            placeholder="Ingresa tu promedio de egreso"
+          /><br /><br />
+
+          <label>ESCOM fue tu:</label><br />
+          <input
+            type="checkbox"
+            name="opciones"
+            value="1ra"
+            id="1ra"
+            required
+          />
+          <label for="1ra">1ra opcion</label>
+          <input
+            type="checkbox"
+            name="opciones"
+            value="2da"
+            id="2da"
+            required
+          />
+          <label for="2da">2da opcion</label>
+          <input
+            type="checkbox"
+            name="opciones"
+            value="3ra"
+            id="3ra"
+            required
+          />
+          <label for="3ra">3ra opcion</label>
+          <input
+            type="checkbox"
+            name="opciones"
+            value="4ta"
+            id="4ta"
+            required
+          />
+          <label for="4ta">4ta opcion</label><br />
+        </fieldset>
+        <br /><br />
+
+        <button type="submit" value="enviar">Enviar</button>
+        <button type="reset">Limpiar</button>
+      </form>
+    </div>
+  </body>
+</html>
