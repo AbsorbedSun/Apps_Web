@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Formulario HTML</title>
+    <meta name="author" content="AGA" />
+    <script>
+      function confirmacion() {
+        alert("Tus datos fueron guardados correctamente.");
+      }
+    </script>
+  </head>
+  <body>
+    <h2 style="text-align: center">Formulario HTML</h2>
+    <div
+      style="
+        width: 50%;
+        margin: 0 auto;
+        border: 2px solid darkblue;
+        padding: 20px;
+        background-color: rgb(208 214 247);
+        border-radius: 15px 15px;
+      "
+    >
+      <form action="">
+        <fieldset>
+          <legend>Datos</legend>
+          <label for="nombre">Nombre: </label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+            disabled
+            placeholder="Solo ingresa letras"
+          /><br /><br />
+
+          <label for="ap_pat">Apellido Paterno: </label>
+          <input type="text" id="ap_pat" name="ap_pat" required /><br /><br />
+
+          <label for="edad">Edad: </label>
+          <input
+            type="number"
+            id="edad"
+            name="edad"
+            required
+            min="17"
+            max="120"
+          /><br /><br />
+
+          <label for="correo">Correo electrónico: </label>
+          <input type="email" id="correo" name="correo" required /><br /><br />
+
+          <label>¿Tecnología Web favorita?</label><br />
+          <input type="checkbox" name="tecnologia" value="html" id="html" />
+          <label for="html">HTML</label>
+          <input type="checkbox" name="tecnologia" value="css" id="css" />
+          <label for="css">CSS</label>
+          <input type="checkbox" name="tecnologia" value="js" id="js" />
+          <label for="js">JavaScript</label><br /><br />
+
+          <label for="tel">Teléfono: </label>
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            pattern="[0-9]{10}"
+            autofocus
+          /><br /><br />
+
+          <label>Género: </label><br />
+          <input
+            type="radio"
+            name="genero"
+            value="hombre"
+            id="hombre"
+            required
+          />
+          <label for="hombre">Hombre</label>
+          <input type="radio" name="genero" value="mujer" id="mujer" required />
+          <label for="mujer">Mujer</label><br /><br />
+
+          <label for="color">Color Favorito: </label>
+          <select name="color" id="color" required>
+            <option value="">Selecciona un color</option>
+            <option value="azul">Azul</option>
+            <option value="verde">Verde</option>
+            <option value="rojo">Rojo</option>
+          </select>
+        </fieldset>
+        <br /><br />
+
+        <div style="text-align: center; padding: 15px">
+          <!--<button
+            type="submit"
+            value="enviar"
+            onclick="alert('Exito, tus datos fueron guardados correctamente')"
+          >
+            Enviar
+          </button>-->
+          <button type="submit" value="enviar" onclick="confirmacion()">
+            Enviar
+          </button>
+          <button type="reset">Limpiar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

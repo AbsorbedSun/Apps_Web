@@ -4,11 +4,17 @@
     <meta charset="utf-8" />
     <title>Formulario HTML</title>
     <meta name="author" content="AGA" />
+    <link href="CSS/prueba.css" rel="stylesheet" />
+    <script>
+      function confirmacion() {
+        alert("Tus datos fueron guardados correctamente.");
+      }
+    </script>
   </head>
   <body>
-    <h2>Formulario HTML</h2>
+    <h2 class="centrado">Formulario HTML</h2>
     <div>
-      <form action="exito.html" method="get">
+      <form action="">
         <fieldset>
           <legend>Datos</legend>
           <label for="nombre">Nombre: </label>
@@ -17,6 +23,7 @@
             id="nombre"
             name="nombre"
             required
+            disabled
             placeholder="Solo ingresa letras"
           /><br /><br />
 
@@ -75,8 +82,12 @@
         </fieldset>
         <br /><br />
 
-        <button type="submit" value="enviar">Enviar</button>
-        <button type="reset">Limpiar</button>
+        <div class="centrado">
+          <button type="submit" value="enviar" onclick="confirmacion()">
+            Enviar
+          </button>
+          <button type="reset">Limpiar</button>
+        </div>
       </form>
     </div>
   </body>

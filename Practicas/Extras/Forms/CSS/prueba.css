@@ -1,0 +1,12 @@
+div {
+  width: 50%;
+  margin: 0 auto;
+  border: 2px solid darkblue;
+  padding: 20px;
+  background-color: rgb(208 214 247);
+  border-radius: 15px 15px;
+}
+.centrado {
+  text-align: center;
+  color: blue;
+}
