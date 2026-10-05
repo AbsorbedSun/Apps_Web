@@ -1,0 +1,24 @@
+ol {
+  color: brown;
+  font-style: italic;
+}
+section {
+  font-weight: bold;
+}
+.centrar {
+  text-align: center;
+}
+#rojo {
+  color: red;
+}
+.violeta {
+  color: violet;
+}
+main p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/*Selector de atributo*/
+ol[type="I"] {
+  text-align: right;
+  background-color: azure;
+}
