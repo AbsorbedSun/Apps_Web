@@ -1,0 +1,47 @@
+div {
+  width: 70%;
+  margin: auto;
+}
+
+table {
+  border: 2px solid;
+  border-color: black;
+  text-align: center;
+  color: black;
+}
+
+td {
+  border: 1px dashed;
+  border-color: #0d0f36;
+  text-align: center;
+  color: black;
+}
+
+th {
+  color: white;
+  background-color: #0d0f36;
+}
+.hora {
+  color: #294380;
+  font-weight: bold;
+}
+
+.libre {
+  background-color: #b9f1d6;
+}
+
+.centrar {
+  justify-content: center;
+  text-align: center;
+}
+
+#fondo {
+  background-color: #f1f6ce;
+}
+
+#nombre {
+  color: #294380;
+}
+#boleta {
+  color: #69d2cd;
+}
