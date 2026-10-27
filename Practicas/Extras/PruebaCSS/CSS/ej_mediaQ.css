@@ -1,0 +1,80 @@
+/*Selectores de descendencia o combinacion*/
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*Pseudoclase - dos puntos*/
+nav ul li a:hover {
+  color: yellow;
+}
+
+section {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+article {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  flex: 2;
+  margin-right: 20px;
+}
+
+aside {
+  background-color: #ddd;
+  padding: 20px;
+  border-left: 5px solid #666;
+  flex: 1;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  padding: 10px;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/*Media Query*/
+
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+  }
+  article {
+    margin-right: 0;
+    padding-bottom: 20px;
+  }
+}

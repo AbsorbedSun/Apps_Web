@@ -1,0 +1,123 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.Principal {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  flex: 1; /* empuja el footer hacia abajo */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+header img {
+  height: 120px;
+}
+
+.logoIzq,
+.logoDer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #1a237e;
+  font-weight: bold;
+}
+
+.logoIzq {
+  text-align: left;
+}
+
+.logoDer {
+  text-align: right;
+}
+
+.acceso {
+  align-items: center;
+}
+
+button {
+  background-color: #00008b;
+  color: white;
+  border: 1px solid #00008b;
+  padding: 8px 25px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+  color: #00008b;
+}
+
+.acceso img {
+  height: 30px;
+}
+
+main p {
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.acceso {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer {
+  background-color: #00008b;
+  color: white;
+  padding: 15px 5%;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img {
+  height: 40px;
+}
+
+.footerDer p {
+  text-align: right;
+  margin: 0;
+}
+
+.footerIzq p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .Principal {
+    max-width: 95%;
+  }
+
+  .acceso {
+    flex-direction: column;
+  }
+}
