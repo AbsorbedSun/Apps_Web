@@ -1,240 +1,84 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Servicios Tecnológicos S.A de C.V</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <style>
-      p {
-        text-align: justify;
-      }
-    </style>
   </head>
   <body>
-    <!-- <div class="contenedor">
-      <div class="row">
-        <div class="col-md-4">
-          <h4>Columna 1</h4>
-        </div>
-        <div class="col-md-4">
-          <h4>Columna 2</h4>
-        </div>
-        <div class="col-md-4">
-          <h4>Columna 3</h4>
-        </div>
-      </div>
-    </div>-->
-
-    <div class="bg-primary text-white p-3" style="width: 100%; margin: 0 auto">
-      <h2 class="text-center">Bienvenidos a Escom</h2>
-    </div>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">ESCOM</a>
+    <nav class="navbar navbar-expand-lg navbar-dark- bg-dark">
+      <div class="container">
+        <a href="#">TecnoWeb</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal"
           aria-expanded="false"
-          aria-label="Toggle navigation"
+          aria-label="Mostrar u ocultar Menú de Navegación"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="nav-bar ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#mision">Misión y Visión</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+              <a href="#inicio" class="nav-link active" aria-current="page"
+                >Inicio</a
               >
-                Oferta Educativa
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#isc">ISC</a></li>
-                <li><a class="dropdown-item" href="#iia">IIA</a></li>
-                <li><a class="dropdown-item" href="#lcd">LCD</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">MSCM</a>
-                </li>
-              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#servicios" class="nav-link active" aria-current="page"
+                >Servicios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#contacto" class="nav-link active" aria-current="page"
+                >Contacto</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="container text-center">
-      <div class="row">
-        <div class="col">
-          <h3 id="mision">Mision</h3>
-          <p>
-            La Secretaría General es la instancia responsable de regular y
-            conducir la política interna del Instituto, con el propósito de
-            lograr la convivencia armónica, el desarrollo integral, una cultura
-            de la protección civil y la seguridad de toda la comunidad
-            politécnica. Para lograrlo, se actuará con una vocación de servicio,
-            incluyente de compromiso, con apego a las normas y políticas en
-            vigor.
-          </p>
-        </div>
-        <div class="col">
-          <h3>Vision</h3>
-          <p>
-            Lograr una comunidad politécnica abierta, libre, incluyente,
-            informada y crítica, con sólidos principios y una amplia
-            participación en el quehacer institucional; que tenga confianza
-            tanto en las autoridades como en la propia comunidad y que se apegue
-            al orden jurídico y administrativo bajo un esquema de rendición de
-            cuentas, donde se privilegie el diálogo, la negociación y la
-            construcción de convergencias que fortalezcan al IPN.
-          </p>
-        </div>
-        <div class="col">
-          <h3>Lema</h3>
-          <p>
-            La frase
-            <em>"La Técnica al Servicio de una Patria Mejor"</em>, fue propuesta
-            en 1937 por el estudiante Jesús Robles Martínez durante el Primer
-            Congreso Nacional de Estudiantes Técnicos en Chihuahua. Años
-            después, la frase se modificó a la versión actual que representa los
-            ideales y el compromiso social de la comunidad politécnica con
-            México.
-          </p>
-        </div>
-      </div>
-    </div>
 
-    <div class="container text-center">
-      <div class="row">
-        <div class="col">
-          <h1 style="color: dodgerblue">Oferta Educativa</h1>
-        </div>
-      </div>
-    </div>
+    <header id="inicio" class="container py-5 text-center">
+      <h1 class="display-4 fw-bold">Soluciones digitales para tu negocio</h1>
+      <p class="lead text-secondary">
+        Desarrollamos soluciones web modernas, funcionales y adaptanles
+      </p>
 
-    <div class="container text-center">
-      <div class="row">
-        <div class="col">
-          <h2 id="isc">Ingenieria en Sistemas Computacionales</h2>
-          <hr />
-          <p>
-            <i
-              >Formar ingenieros en sistemas computacionales de sólida
-              preparación científica y tecnológica en los ámbitos del desarrollo
-              de software y hardware, que propongan, analicen, diseñen,
-              desarrollen, implementen y gestionen sistemas computacionales a
-              partir de tecnologías de vanguardia y metodologías, normas y
-              estándares nacionales e internacionales de calidad; líderes de
-              equipos de trabajo multidisciplinarios y multiculturales, con un
-              alto sentido ético y de responsabilidad.</i
-            >
-          </p>
-        </div>
-        <div class="col">
-          <h2 id="iia">Ingenieria en Inteligencia Artificial</h2>
-          <hr />
-          <p>
-            <i>
-              Formar expertos capaces de desarrollar sistemas inteligentes
-              utilizando diferentes metodologías en las diferentes etapas de
-              desarrollo y aplicando algoritmos en áreas como aprendizaje de
-              máquina, procesamiento automático de lenguaje natural, visión
-              artificial y modelos bioinspirados para atender las necesidades de
-              los diferentes sectores de la sociedad a través de la generación
-              de procesos y soluciones innovadoras.
-            </i>
-          </p>
-        </div>
-        <div class="col">
-          <h2 id="lcd">Licenciatura en Ciencia de Datos</h2>
-          <hr />
-          <p>
-            <i>
-              Formar expertos capaces de extraer conocimiento implícito y
-              complejo, potencialmente útil a partir de grandes conjuntos de
-              datos, utilizando métodos de inteligencia artificial, aprendizaje
-              de máquina, estadística, sistemas de bases de datos y modelos
-              matemáticos sobre comportamientos probables, para apoyar la toma
-              de decisiones de alta dirección.
-            </i>
-          </p>
-        </div>
-      </div>
-    </div>
+      <a href="#" class="btn btn-primary btn-lg">Conoce nuestros servicios</a>
+    </header>
 
-    <div class="container text-center">
-      <div class="row">
-        <div class="col">
-          <h1 style="color: dodgerblue">Oferta Educativa con tarjetas</h1>
-        </div>
-      </div>
-    </div>
-
-    <div class="container text-center">
-      <div class="row">
-        <div class="col d-flex justify-content-center">
-          <div class="card" style="width: 18rem">
-            <img src="..." class="card-img-top" alt="ISC" />
-            <div class="card-body">
-              <h5 class="card-title">Ingeniería en Sistemas Computacionales</h5>
-              <p class="card-text">
-                Formar ingenieros con sólida preparación científica y
-                tecnológica para diseñar, desarrollar y gestionar sistemas de
-                software y hardware, con ética y liderazgo.
-              </p>
-              <a href="#isc" class="btn btn-primary">Ver más</a>
+    <main>
+      <section id="servicios" class="container py-4">
+        Nuestros Servicios
+      </section>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Diseño Web</h5>
+                <p class="card-text">
+                  Creamos interfaces atractivas, funcionables y adaptables
+                </p>
+                <a href="#" class="btn btn-outline-primary"
+                  >Solicitar Información</a
+                >
+              </div>
             </div>
-          </div>
-        </div>
-
-        <div class="col d-flex justify-content-center">
-          <div class="card" style="width: 18rem">
-            <img src="..." class="card-img-top" alt="IIA" />
-            <div class="card-body">
-              <h5 class="card-title">Ingeniería en Inteligencia Artificial</h5>
-              <p class="card-text">
-                Formar expertos en sistemas inteligentes, aplicando aprendizaje
-                de máquina, lenguaje natural, visión artificial y modelos
-                bioinspirados.
-              </p>
-              <a href="#iia" class="btn btn-primary">Ver más</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col d-flex justify-content-center">
-          <div class="card" style="width: 18rem">
-            <img src="..." class="card-img-top" alt="LCD" />
-            <div class="card-body">
-              <h5 class="card-title">Licenciatura en Ciencia de Datos</h5>
-              <p class="card-text">
-                Formar expertos que extraen conocimiento útil de grandes
-                conjuntos de datos para apoyar la toma de decisiones.
-              </p>
-              <a href="#lcd" class="btn btn-primary">Ver más</a>
-            </div>
-          </div>
+          </article>
         </div>
       </div>
-    </div>
-
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
