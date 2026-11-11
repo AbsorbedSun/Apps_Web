@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ejemplo de Eventos con JS</title>
+    <script>
+      var imagen1 = new Image();
+      imagen1.src = "Imgs/escudoESCOM.png";
+      var imagen2 = new Image();
+      imagen2.src = "Imgs/logotipo_ipn.png";
+
+      let i = 1;
+      function cambiarImagen() {
+        if (i == 1) {
+          document.querySelector("img").src = imagen2.src;
+          i = 2;
+        } else {
+          document.querySelector("img").src = imagen1.src;
+          i = 1;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <p>
+      <img
+        src="Imgs/escudoESCOM.png"
+        alt="Logo de ESCOM"
+        id="logo"
+        width="200px"
+        onmouseover="cambiarImagen()"
+        onmouseout="cambiarImagen()"
+      />
+    </p>
+  </body>
+</html>

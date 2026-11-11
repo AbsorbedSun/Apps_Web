@@ -1,88 +1,90 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Servicios Tecnológicos S.A de C.V</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark- bg-dark">
-      <div class="container">
-        <a href="#">TecnoWeb</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#menuPrincipal"
-          aria-controls="menuPrincipal"
-          aria-expanded="false"
-          aria-label="Mostrar u ocultar Menú de Navegación"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menuPrincipal">
-          <ul class="nav-bar ms-auto">
-            <li class="nav-item">
-              <a href="#inicio" class="nav-link active" aria-current="page"
-                >Inicio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#servicios" class="nav-link active" aria-current="page"
-                >Servicios</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#contacto" class="nav-link active" aria-current="page"
-                >Contacto</a
-              >
-            </li>
-          </ul>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Tecnológicos</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">TecnoWeb</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Mostrar u ocultar menú de navegación">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#inicio"  >Inicio</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios" >Servicios</a></li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto" >Contacto</a></li>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
 
     <header id="inicio" class="container py-5 text-center">
-      <h1 class="display-4 fw-bold">Soluciones digitales para tu negocio</h1>
-      <p class="lead text-secondary">
-        Desarrollamos soluciones web modernas, funcionales y adaptanles
-      </p>
-
-      <a href="#" class="btn btn-primary btn-lg">Conoce nuestros servicios</a>
+        <h1 class="display-4 fw-bold">Soluciones digitales para tu negocio</h1>
+        <p class="lead text-secondary">Desarrollamos soluciones web modernas, funcionales y adaptables</p>
+        <a href="#" class="btn btn-primary btn-lg">Conoce nuestros servicios</a>
     </header>
 
     <main>
-      <section id="servicios" class="container py-4">
-        Nuestros Servicios
-      </section>
-      <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-4">
-          <article class="card h-100">
-            <div class="card" style="width: 18rem">
-              <div class="card-body">
-                <h5 class="card-title">Diseño Web</h5>
-                <p class="card-text">
-                  Creamos interfaces atractivas, funcionables y adaptables
-                </p>
-                <a href="#" class="btn btn-outline-primary"
-                  >Solicitar Información</a
-                >
-              </div>
+        <section id="servicios" class="container py-4">
+            <h2 class="text-center mb-4">Nuestros Servicios</h2>
+        
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100 shadow-sm">
+            
+                <!-- Esta línea no iba <div class="card" style="width: 18rem;"> -->
+                    <div class="card-body">
+                        <h3 class="card-title h3">Diseño Web</h3>
+                        <p class="card-text">Creamos interfaces atractivas, funcionales y adaptables.</p>
+                        <a href="#" class="btn btn-outline-primary">Solictar información</a>
+                    </div>
+                </article>
             </div>
-          </article>
+    
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title h3">Desarrollo Web</h3>
+                        <p class="card-text">Construimos sitios y aplicaciones para diferentes necesidades.</p>
+                        <a href="#contacto" class="btn btn-outline-primary">Solictar información</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title h3">Soporte Técnico</h3>
+                        <p class="card-text">Ayudamos a mantener los sistemas funcionando correctamente.</p>
+                        <a href="#contacto" class="btn btn-outline-primary">Solictar información</a>
+                    </div>
+                </article>
+            </div>
         </div>
-      </div>
-    </main>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        </section>
+         
+        </main>
+
+        <footer id="contacto" class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+        <h2 class="h5">Contacto</h2>
+        <p>Escríbenos para conocer más sobre nuestros servicios.</p>
+
+        <p class="mb-0">© 2026 TecnoWeb</p>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
 </html>
